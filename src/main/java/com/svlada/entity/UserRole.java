@@ -49,4 +49,14 @@ public class UserRole {
     public Role getRole() {
         return role;
     }
+
+	public void setId(Id id) {
+		this.id = id;
+	}
+
+	public void setRole(Role role) {
+		this.role = role;
+	}
+    
+    
 }

@@ -9,22 +9,22 @@ public class JwtSettings {
     /**
      * {@link JwtToken} will expire after this time.
      */
-    private Integer tokenExpirationTime;
+    private Integer tokenExpirationTime = 15;
 
     /**
      * Token issuer.
      */
-    private String tokenIssuer;
+    private String tokenIssuer = "http://svlada.com";
     
     /**
      * Key is used to sign {@link JwtToken}.
      */
-    private String tokenSigningKey;
+    private String tokenSigningKey = "xm8EV6Hy5RMFK4EEACIDAwQus";
     
     /**
      * {@link JwtToken} can be refreshed during this timeframe.
      */
-    private Integer refreshTokenExpTime;
+    private Integer refreshTokenExpTime = 60;
     
     public Integer getRefreshTokenExpTime() {
         return refreshTokenExpTime;
